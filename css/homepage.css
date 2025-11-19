@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.scroller {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroller-inner {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  animation: scroll-left 15s linear infinite;
+}
+
+h1 {
+    font-family: 'Jacquard 24';
+    color: white; 
+}
+
+.song-image{
+    width: 300px;
+    height: 300px;
+}
+
+.song-title{
+    font-family: 'Jacquard 24';
+}
+
+.item {
+  min-width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+footer{
+    background-color: burlywood;
+    padding: 20px;
+}

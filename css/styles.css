@@ -1,0 +1,59 @@
+/* Used for consistent layouts and styling */
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Unbounded";
+    background: url("../images/background-image.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(60, 40, 20, 0.596); /* Adjust alpha for lighter/darker */
+    pointer-events: none;
+    z-index: -1;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    color: #F0F0F0;
+    opacity: 70%;
+    text-align: center;
+}
+
+nav {
+    text-align: end;
+    margin: 0;
+    padding: 22px 0;
+    width: auto;
+    background-color:#bca583;
+    border-radius: 0 0 20px 20px;
+}
+
+nav a{
+    display: inline-block;
+    margin: 0 18px;
+    text-decoration: none;
+    color: #FFFFF5;
+    transition: transform 0.2s ease;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    color:brown;
+}
