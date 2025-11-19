@@ -1,3 +1,3 @@
 function navigate(pageUrl){
-    window.location.href(pageUrl)
+    window.location.href = pageUrl;
 }
