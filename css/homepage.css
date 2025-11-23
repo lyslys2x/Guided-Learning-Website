@@ -19,8 +19,11 @@
 }
 
 h1 {
+    margin : 20px;
     font-family: 'Jacquard 24';
-    color: white; 
+    font-size: 54px;
+    color: white;
+    text-align: center;
 }
 
 .song-image{

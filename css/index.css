@@ -56,3 +56,15 @@ h1{
     height: auto; /* Automatically adjusts itself to grid's height */
     object-fit: contain;
 }
+
+footer{
+    background-color: transparent;
+    padding: 0;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    color: #F0F0F0;
+    opacity: 70%;
+    text-align: center;
+}
