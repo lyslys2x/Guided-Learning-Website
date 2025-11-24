@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.background-section{
+    background-color: #996633;
+    padding: 16px;
+    margin: 16px 0;
+    height: auto;
+    width: auto;
+}
+
+.background-section h1{
+    text-align: center;
+    color: wheat;
+    font-family: 'Jacquard 24';
+    font-size: 64px;
+}
