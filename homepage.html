@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/homepage.css">
-    </head>
-    <body>
-        <nav>
-            <a href="#">Introduction</a>
-            <a href="#">Lyricism</a>
-            <a href="#">Conclusion</a>
-        </nav>
-        <div class="main-content">
-            <h1>Songs</h1>
-            <div class="scroller">
-                <div class="scroller-inner">
-                    <div class="item">
-                        <img class="song-image" src="images/deer.png">
-                        <p class="song-title">Family Tree Intro</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preacher's Daughter | Home</title>
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="body">
+    <nav class="top-nav">
+        <div onclick="navigate('index.html')" class="nav-brand">Preacher's Daughter</div>
+        <div class="nav-links">
+            <a class="active" href="#track-lineup">Track Line-up</a>
+            <a href="#background">Introduction</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="track-lineup">
+        <div class="track-lineup">
+            <p class="eyebrow">Track Line-up</p>
+            <div class="carousel">
+                <button class="carousel-btn prev" type="button" aria-label="Previous tracks">‹</button>
+                <div class="carousel-window" id="trackCarousel">
+                    <div class="carousel-track">
+                        <a class="track-card" onclick="navigate('strangers.html')">
+                            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=200&q=80" alt="Strangers track cover">
+                            <span>Strangers</span>
+                        </a>
+                        <a class="track-card" href="#introduction">
+                            <img src="https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=200&q=80" alt="Preachers Daughter track cover">
+                            <span>Preachers Daughter</span>
+                        </a>
+                        <a class="track-card" href="#sun-bleached">
+                            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=200&q=80" alt="Sun Bleached Flies track cover">
+                            <span>Sun Bleached Flies</span>
+                        </a>
+                        <a class="track-card" href="#family-tree">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=200&q=80" alt="Family Tree track cover">
+                            <span>Family Tree</span>
+                        </a>
+                        <a class="track-card" href="#hard-times">
+                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=200&q=80" alt="Hard Times track cover">
+                            <span>Hard Times</span>
+                        </a>
+                        <a class="track-card" href="#sun-bleached">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=200&q=80" alt="Sun Bleached Flies alt cover">
+                            <span>Sun Bleached Flies</span>
+                        </a>
                     </div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                    <div class="item">Item 4</div>
+                </div>
+                <button class="carousel-btn next" type="button" aria-label="Next tracks">›</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="background" class="background-section">
+            <div class="section-heading">
+                <h2>Introduction</h2>
+                <p class="lede">A visual prelude to the story behind the album.</p>
+            </div>
+            <div class="background-layout">
+                <h2>Hayden Ahedonia (a.k.a. Ethel Cain)</h2>
+                <div class="background-details">
+                    <figure class="portrait-card">
+                        <img src="./images/ethel-cain-2.png">
+                        <figcaption>Preachers Daughter</figcaption>
+                    </figure>
+                    <p>
+                        Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
+                    </p>
                 </div>
             </div>
-            <h1>Intro</h1>
-        </div>
-    </body>
+            <div class="background-layout">
+                <h2>Preacher's Daughter</h2>
+                <div class="background-details">
+                    <figure class="portrait-card">
+                        <img src="./images/ethel-cain-2.png">
+                        <figcaption>Preachers Daughter</figcaption>
+                    </figure>
+                    <p>
+                        Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>Created by Alysa for Guided Learning 𖦹 Not affiliated with Ethel Cain</p>
     </footer>
+
+    <script>
+        (function () {
+            const windowEl = document.querySelector('.carousel-window');
+            const cards = Array.from(document.querySelectorAll('.track-card'));
+            const prev = document.querySelector('.carousel-btn.prev');
+            const next = document.querySelector('.carousel-btn.next');
+
+            if (!windowEl || cards.length === 0 || !prev || !next) return;
+
+            const getStep = () => {
+                const card = cards[0];
+                const style = window.getComputedStyle(card);
+                const gap = parseInt(style.marginRight || '16', 10);
+                return card.offsetWidth + gap;
+            };
+
+            const slide = (direction) => {
+                windowEl.scrollBy({
+                    left: getStep() * direction,
+                    behavior: 'smooth'
+                });
+            };
+
+            prev.addEventListener('click', () => slide(-1));
+            next.addEventListener('click', () => slide(1));
+        }());
+    </script>
+    <script src="./js/navigation.js"></script>
+</body>
 </html>

@@ -16,15 +16,19 @@
 body {
     margin: 0;
     font-family: "Unbounded";
-    background: url("../images/background-image.jpg") center/cover no-repeat fixed;
     position: relative;
+    color: var(--cream);
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 35%),
+                radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
+                linear-gradient(135deg, rgba(120, 64, 25, 0.7) 0%, rgba(179, 107, 34, 0.7) 50%, rgba(132, 77, 22, 0.7) 100%),
+                url("../images/background-image.jpg") center/cover no-repeat fixed;
 }
 
 body::before {
     content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(60, 40, 20, 0.596); /* Adjust alpha for lighter/darker */
+    background: rgba(60, 40, 20, 0.4); /* Adjust alpha for lighter/darker */
     pointer-events: none;
     z-index: -1;
 }
@@ -39,26 +43,57 @@ footer p{
     color: #F0F0F0;
     text-align: center;
 }
-
-nav {
-    text-align: end;
-    margin: 0;
-    padding: 22px 0;
-    width: auto;
-    background-color:#bca583;
-    border-radius: 0 0 20px 20px;
+:root {
+    --caramel: #b8742f;
+    --caramel-dark: #844d16;
+    --cream: #fff7e6;
+    --canvas: #b06b26;
+    --accent: #f3c766;
+    --shadow: rgba(0, 0, 0, 0.25);
 }
 
-nav a{
-    display: inline-flex;
-    margin: 0 18px;
-    text-decoration: none;
-    color: #FFFFF5;
-    transition: 0.2s ease;
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
-nav a:hover{
-    background-color: #663300;
-    border-radius: 20px;
-    padding: 8px;
+.top-nav .nav-brand {
+    font-family: "Jacquard 24", "Unbounded", cursive;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--cream);
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.top-nav a {
+  color: var(--cream);
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.top-nav .nav-brand:hover {
+  cursor: pointer;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    background: var(--cream);
+    color: var(--caramel-dark);
+    box-shadow: 0 10px 25px var(--shadow);
 }
