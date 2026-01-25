@@ -33,7 +33,8 @@ h1{
 }
 
 .homepage-button{
-    height: 75px;
+    margin: 10px;
+    height: 100px;
     width: 500px;
     display: flex;
     justify-content: center; /* horizontal */
