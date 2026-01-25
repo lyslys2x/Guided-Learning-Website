@@ -1,0 +1,213 @@
+/* Used for consistent layouts and styling */
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Unbounded";
+    position: relative;
+    color: var(--cream);
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 35%),
+                radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
+                linear-gradient(135deg, rgba(120, 64, 25, 0.7) 0%, rgba(179, 107, 34, 0.7) 50%, rgba(132, 77, 22, 0.7) 100%),
+                url("../images/background-image.jpg") center/cover no-repeat fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(60, 40, 20, 0.4); /* Adjust alpha for lighter/darker */
+    pointer-events: none;
+    z-index: -1;
+}
+footer{
+    background-color: #663300;
+    padding: 12px;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+    color: #F0F0F0;
+    text-align: center;
+}
+:root {
+    --caramel: #b8742f;
+    --caramel-dark: #844d16;
+    --cream: #fff7e6;
+    --canvas: #b06b26;
+    --accent: #dfbe9f;
+    --shadow: rgba(0, 0, 0, 0.25);
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.top-nav .nav-brand {
+    font-family: "Jacquard 24", "Unbounded", cursive;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--cream);
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.top-nav a {
+  color: var(--cream);
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.top-nav .nav-brand:hover {
+  cursor: pointer;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    background: var(--cream);
+    color: var(--caramel-dark);
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+.section-heading{   
+    margin: 0;
+    font-family: "Jacquard 24", "Unbounded", cursive;
+    font-size: 72px;
+    color: var(--cream);
+    text-align: center;
+}
+
+.section {
+    margin: 24px;
+    background: rgba(118, 66, 24, 0.88);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 15px 35px var(--shadow);
+}
+
+.section-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.portrait-card {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 32px var(--shadow);
+}
+
+.portrait-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.portrait-card.wide {
+    grid-column: span 2;
+}
+
+.portrait-card figcaption {
+    padding: 12px 14px 14px;
+    font-family: "Unbounded", sans-serif;
+    color: var(--cream);
+    background: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.content{
+    padding: 32px 24px 12px;
+}
+
+.lyrics{
+    background: rgba(255, 255, 255, 0.22);
+    padding: 0 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.22);    
+}
+
+.lyrics p{
+    line-height: 1.6;
+}
+
+/* Music Play Button - Circular Style */
+.music-button {
+    font-family: "Unbounded";
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 75px;
+    width: 220px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #bca583 0%, #f2e2ca 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: rgba(60, 40, 20, 0.9);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #f2e2ca 0%, #bca583 100%);
+}
+
+.music-button:active {
+    transform: scale(0.95);
+}
+
+/* Play/Pause Icons */
+.music-button::before {
+    content: "▶ Play Music";
+}
+
+.music-button.playing::before {
+    content: "⏸ Pause Music";
+}

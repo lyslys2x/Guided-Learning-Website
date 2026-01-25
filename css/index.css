@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Jacquard 24";
+    text-align: center;
+    color:wheat;
+    font-size: 600%;
+}
+
+.bounding-box {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; 
+    align-items: center; 
+    gap: 50px;           
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.homepage-button{
+    height: 75px;
+    width: 500px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    border-radius: 200px;
+    background: linear-gradient(135deg, #bca583 0%, #f2e2ca 100%);
+    color:rgba(60, 40, 20, 0.9);
+    font-size: 28px;
+    transition: transform 0.2s ease;
+}
+
+.homepage-button:hover{
+    transform : scale(1.01);
+    color: #FFFFF5;
+    cursor: pointer;
+}
+
+.vinyl-homepage-vid{
+    margin: 0 0 40px 160px;
+    width: 70%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: transparent;
+    padding: 0;
+}

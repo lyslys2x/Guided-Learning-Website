@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Jacquard 24';
+    src: url('../fonts/Jacquard_24/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.background-section{
+    background-color: #996633;
+    padding: 16px;
+    margin: 16px 0;
+    height: auto;
+    width: auto;
+}
+
+
+
+.background-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img{
+    height: 420px;
+    width: auto;
+    object-fit: contain;
+}
+
+.background-details p{
+    line-height: 1.6;
+    color: beige;
+    font-size: 24px;
+}
+
+.reflection h1{
+    font-family: 'Jacquard 24';
+    font-size: 128px;
+    text-align: center;
+    color: wheat;
+}
+
+.reflection-section{
+    background-color: #996633;
+    padding: 16px;
+    margin: 16px 0;
+    height: auto;
+    width: auto;
+}
+
+.reflection-section h1{
+    text-align: center;
+    color: wheat;
+    font-family: 'Jacquard 24';
+    font-size: 64px;
+}
+
+.reflection-details{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+
+.reflection-details p{
+    line-height: 1.6;
+    color: beige;
+    font-size: 24px;
+}
+
+.background h1{
+    font-family: 'Jacquard 24';
+    font-size: 128px;
+    text-align: center;
+    color: wheat;    
+}
