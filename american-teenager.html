@@ -5,15 +5,15 @@
         <link rel="stylesheet" href="./css/styles.css">
         
         <style>
-            main {
+            .content {
                 margin: 0;
                 font-family: "Unbounded";
                 position: relative;
                 color: var(--cream);
                 background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 35%),
                             radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
-                            linear-gradient(135deg, rgba(120, 64, 25, 0.7) 0%, rgba(179, 107, 34, 0.4) 50%, rgba(132, 77, 22, 0.7) 100%),
-                            url("images/thoroughfare.png") center/cover no-repeat fixed;
+                            linear-gradient(135deg, rgba(205, 178, 152, 0.7) 0%, rgba(179, 107, 34, 0.4) 50%, rgba(132, 77, 22, 0.7) 100%),
+                            url("images/at-bg.png") center/cover no-repeat fixed;
             }
 
         </style>
@@ -21,6 +21,10 @@
     <body class="body">
         <nav class="top-nav">
             <div onclick="navigate('index.html')" class="nav-brand">American Teenager</div>
+            <button id="playMusic" class="music-button"></button>
+            <audio id="bgMusic" loop>
+                <source src="https://github.com/lyslys2x/Guided-Learning-Website/releases/download/song-ec/American.Teenager.mp3"  type="audio/mpeg">
+            </audio>
             <div class="nav-links">
                 <a class="active" href="#introduction">Introduction</a>
                 <a href="#lyricism">Lyricism</a>
@@ -33,31 +37,63 @@
             <section class="section">
                     <div class="section-details">
                         <figure class="portrait-card">
-                            <img src="images/ethel-cain.png">
+                            <img src="images/at-intro.png">
                             <figcaption>Preachers Daughter</figcaption>
                         </figure>
                         <p>
-                            Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
-                        </p>
+                        American Teenager is where Ethel’s Story really starts, in the song, 
+                        Ethel is introduced as a typical teenager with a bit of a drinking problem, curious about the world around her and still 
+                        deeply religious, she is optimistic of her life, like how a teenager should be. <br><br>
+                        In an interview, Hayden mentioned that when she was younger, she believed she 
+                        could be the one to change everything, that her dreams were achievable and that if nothing else, she should at least die trying. 
+                        She wrote this song to express her frustration with the things she thought an ‘American Teenager’ was supposed to
+                         be but never had any real chance of becoming.</p>
                     </div>
             </section>
             <!-- Lyricism -->
             <h2 id="lyricism" class="section-heading">Lyricism</h2>
             <section class="section">
                 <div class="section-layout">
-                    <h3><em>"These crosses all over my body, remind me of who I used to be."</em></h3>
+                    <h3><em>"Grew up under yellow light on the street, putting too much faith in the make-belief and another highschool football team."</em></h3>
                     <div class="lyrics">
-                        <p>
-                        	Ethel is lamenting on how although she has left her Christian religion, she’s constantly reminded about it. The crosses over her body can allude to either her cross tattoos or her mental perception of herself being weighed down by her past religion.
+                        <p>	Yellow light symbolises God’s presence and divinity, Ethel was raised in a devout Christian community and was probably 
+                            sheltered from the ‘real world’, the consequent lyric is where Ethel slowly wakes up 
+                            and realises that her sheltered life is far from reality. It also demonstrates Ethel’s naïve and optimistic personality.
                         </p>
                     </div>
+                </div>
                 <div class="section-layout">
-                    <h2>Hayden Ahedonia (a.k.a. Ethel Cain)</h2>
+                    <h3><em>"The neighbour’s brother came home in a box, but he wanted to go so maybe it was his fault, another red heart taken by the American Dream."</em></h3>
                     <div class="lyrics">
                         <p>
-                            Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
+                            Ethel reflects on her neighbour dying overseas after serving in the military, she thinks he may be responsible for his own death, 
+                            yet she empathises with his desire to chase the American Dream. In America, soldiers can receive university scholarships and money 
+                            for their service which are ingredients for the American Dream. Instead of pursuing his education and living his life as a teenager, 
+                            he’s risking his life, and eventually losing it, for a chance at the American Dream. 
+                            This aligns with Hayden’s sentiments towards being an American Teenager, her neighbour had no real chance of being one.
                         </p>
-                    </div>    
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"."</em></h3>
+                    <div class="lyrics">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"."</em></h3>
+                    <div class="lyrics">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"."</em></h3>
+                    <div class="lyrics">
+                        <p>
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -83,4 +119,5 @@
         <p>Created by Alysa for Guided Learning 𖦹 Not affiliated with Ethel Cain</p>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="./js/play-song.js"></script>
 </html>
