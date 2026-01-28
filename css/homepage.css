@@ -14,7 +14,7 @@
 .track-lineup {
     max-width: auto;
     margin: 0 auto;
-    background: rgba(114, 66, 25, 0.4);
+    background: rgba(153, 77, 0, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     padding: 40px 24px;
@@ -111,7 +111,7 @@
 
 .background-section {
     margin-bottom: 40px;
-    background: rgba(118, 66, 24, 0.4);
+    background: rgba(153, 77, 0, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
     padding: 24px 40px;
