@@ -12,8 +12,16 @@
                 color: var(--cream);
                 background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 35%),
                             radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
-                            linear-gradient(135deg, rgba(120, 64, 25, 0.7) 0%, rgba(179, 107, 34, 0.4) 50%, rgba(132, 77, 22, 0.7) 100%),
-                            url("images/thoroughfare.png") center/cover no-repeat fixed;
+                            linear-gradient(135deg, rgba(153, 153, 153, 0.7) 0%, rgba(179, 179, 179, 0.4) 50%, rgba(0, 102, 153, 0.7) 100%),
+                            url("images/ptole-bg.png") center/cover no-repeat fixed;
+            }
+            .section {
+                margin: 24px;
+                background: rgba(0, 64, 128, 0.9);
+                border: 2px solid rgba(255, 255, 255, 0.15);
+                border-radius: 20px;
+                padding: 24px 32px;
+                box-shadow: 0 15px 35px var(--shadow);
             }
 
         </style>
@@ -21,10 +29,6 @@
     <body class="body">
         <nav class="top-nav">
             <div onclick="navigate('homepage.html')" class="nav-brand">Ptolemaea</div>
-            <button id="playMusic" class="music-button"></button>
-            <audio id="bgMusic" loop>
-                <source src="https://github.com/lyslys2x/Guided-Learning-Website/releases/download/song-ec/Ptolemaea.mp3"  type="audio/mpeg">
-            </audio>
             <div class="nav-links">
                 <a class="active" href="#introduction">Introduction</a>
                 <a href="#lyricism">Lyricism</a>
@@ -33,14 +37,20 @@
         </nav>
             
         <main class="content">
+            <button id="playMusic" class="music-button"></button>
+            <audio id="bgMusic" loop>
+                <source src="https://github.com/lyslys2x/Guided-Learning-Website/releases/download/song-ec/Ptolemaea.mp3"  type="audio/mpeg">
+            </audio>
             <h2 id="introduction" class="section-heading">Track 8: Ptolemaea</h2>
             <section class="section">
                     <div class="section-details">
                         <figure class="portrait-card">
-                            <img src="images/ethel-cain.png">
-                            <figcaption>Preachers Daughter</figcaption>
+                            <img src="images/truck2.png">
+                            <figcaption>Ethel in Isaiah's Truck</figcaption>
                         </figure>
-                        <p>
+                        <p>Ptolemaea is a horrifying track, through the song you feel Ethel’s deep fear, confusion and anxiety of her situation,
+                             drugged and forced into prostitution by Isaiah. Ethel clearly had no notion of the world around her, lost in the haze of drugs. 
+                             <br><br>In Dante’s Inferno, Ptolemaea refers to the 3rd ring in the ninth circle of hell specifically reserved for those that betrayed their family and friends, suggesting that Ethel thinks that her current actions are disgraceful to her family and friends back in Shady Grove.
                         </p>
                     </div>
             </section>
