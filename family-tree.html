@@ -13,14 +13,18 @@
                 background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 35%),
                             radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
                             linear-gradient(135deg, rgba(120, 64, 25, 0.7) 0%, rgba(179, 107, 34, 0.4) 50%, rgba(132, 77, 22, 0.7) 100%),
-                            url("images/thoroughfare.png") center/cover no-repeat fixed;
+                            url("images/ft-bg.png") center/cover no-repeat fixed;
             }
 
         </style>
     </head>
     <body class="body">
         <nav class="top-nav">
-            <div onclick="navigate('index.html')" class="nav-brand">Family Tree</div>
+            <div onclick="navigate('homepage.html')" class="nav-brand">Family Tree</div>
+            <button id="playMusic" class="music-button"></button>
+            <audio id="bgMusic" loop>
+                <source src="https://github.com/lyslys2x/Guided-Learning-Website/releases/download/song-ec/Family.Tree.mp3"  type="audio/mpeg">
+            </audio>
             <div class="nav-links">
                 <a class="active" href="#introduction">Introduction</a>
                 <a href="#lyricism">Lyricism</a>
@@ -33,11 +37,15 @@
             <section class="section">
                     <div class="section-details">
                         <figure class="portrait-card">
-                            <img src="images/ethel-cain.png">
-                            <figcaption>Preachers Daughter</figcaption>
+                            <img src="images/logan-np.png">
+                            <figcaption>Logan's Death on the Newspaper</figcaption>
                         </figure>
                         <p>
-                            Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
+                        Family Tree details the death of Ethel’s boyfriend, Logan Phelps, after he got caught for robbing banks and shot to death by police,
+                         the death of Logan also severs Ethels last connection with the town of Shady Grove, 
+                         allowing her to leave Shady Grove behind her once and for all and the start of act 2 of the album.<br><br>
+                        The song is the same as ‘Family Tree (Intro)’ but just with a few additional lyrics. I think the title is the same because it signifies
+                        the end of Ethel's relationship with her family. As seen from the newspaper clippings, Logan was shot while running away from a bank robbery.
                         </p>
                     </div>
             </section>
@@ -45,37 +53,75 @@
             <h2 id="lyricism" class="section-heading">Lyricism</h2>
             <section class="section">
                 <div class="section-layout">
-                    <h3><em>"These crosses all over my body, remind me of who I used to be."</em></h3>
+                    <h3><em>"Give myself up to him in offering, let him make a woman up to him."</em></h3>
                     <div class="lyrics">
                         <p>
-                        	Ethel is lamenting on how although she has left her Christian religion, she’s constantly reminded about it. The crosses over her body can allude to either her cross tattoos or her mental perception of herself being weighed down by her past religion.
+                        Refers to marriage, shows that Ethel was ready to get married to Logan.</p>
+                    </div>
+                </div>
+
+                <div class="section-layout">
+                    <h3><em>"I’m just a child but I’m not above violence, my mama raised me better than that."</em></h3>
+                    <div class="lyrics">
+                        <p>I think this lyric implies that Ethel’s mother and father were constantly arguing and they used their children as an excuse to stay together with one another.
                         </p>
                     </div>
+                </div>
                 <div class="section-layout">
-                    <h2>Hayden Ahedonia (a.k.a. Ethel Cain)</h2>
+                    <h3><em>"When the preacher talks, that man demands his silence."</em></h3>
                     <div class="lyrics">
-                        <p>
-                            Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
+                        <p>The preacher refers to her father (preacher’s daughter), Ethel sees a sort of dissonance between her father as her ‘daddy’ and the ‘preacher’, the ‘preacher’ is someone to be respected no matter what to stay silent in front of, suggesting that his father has his way a lot. ‘that man’ can also refer to god, and Ethel’s father is only scared when facing god. 
                         </p>
-                    </div>    
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"And daddy said shoot first, then run and don’t look back."</em></h3>
+                    <div class="lyrics">
+                        <p>Ethel’s father is the kind of person to accuse people without really thinking, and he doesn’t reflect on his actions and thoughts. This kind of impulsive mindset and personality influenced Ethel.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"So take me down to the river and bathe me clean."</em></h3>
+                    <div class="lyrics">
+                        <p>This lyric can refer to baptism, during baptism, the person is immersed in holy water washing away their sins. With Logan, Ethel feels like she can start anew.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"Put me on the back of your white horse to ride, all the way to the chapel, let you wash over me."</em></h3>
+                    <div class="lyrics">
+                        <p>The imagery of a white horse is a knight and a princess, Ethel feels like Logan is her knight that will save her from reality, ‘the chapel’ refers to marriage. Like the previous lyric, ‘wash over’ can refer to baptism, where Ethel feels like a new person after being with Logan. So in this lyric she is saying that she would marry Logan and they will live a happily ever after, where Ethel is different and renewed, far away from her current reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"I've killed before and I'll kill again."<br>"Take the noose off, wrap it tight around my hand."</em></h3>
+                    <div class="lyrics">
+                        <p>In family tree (intro), Ethel is the one hanging from the noose and being judged by others, having no control over it. Conversely, now Ethel is taking fate in her own hands by leaving Shady Grove.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"They say heaven hath no fury like a woman scorned."</em></h3>
+                    <div class="lyrics">
+                        <p>Ethel feels wronged and angry because Logan got gunned down and killed.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <h3><em>"And baby, hell don't scare me, I've been times before."</em></h3>
+                    <div class="lyrics">
+                        <p>Ethel say she killed before, this can be why she is in hell, alternatively her trauma and environment may already feel like hell to her hence she is not scared of it.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <!-- Conclusion -->
             <h2 id="conclusion" class="section-heading">Conclusion</h2>
             <section class="section">
-                <div class="section-layout">
-                    <h2>Hayden Ahedonia (a.k.a. Ethel Cain)</h2>
-                    <div class="section-details">
-                        <figure class="portrait-card">
-                            <img src="images/ethel-cain.png">
-                            <figcaption>Preachers Daughter</figcaption>
-                        </figure>
-                        <p>
-                            Hayden Ahedonia (a.k.a. Ethel Cain) is an American singer-songwriter and musician. She was born on August 10, 1996 in Nashville, Tennessee. She is the daughter of singer-songwriter Jeff Cain and the granddaughter of country music legend Hank Williams Jr. Cain began her musical career in 2016 with the release of her debut EP, "Preachers Daughter". The album was met with critical acclaim and helped her gain a following. In 2018, she released her debut album, "Ethel Cain", which was also met with critical acclaim. In 2020, she released her second album, "Sun Bleached Flies", which was also met with critical acclaim. In 2022, she released her third album, "Family Tree", which was also met with critical acclaim. In 2024, she released her fourth album, "Hard Times", which was also met with critical acclaim.
-                        </p>
-                    </div>
-                </div>
+                <p style="line-height: 1.6; font-size: 18px;"></p>
             </section>
         </main>
     </body>
@@ -83,4 +129,5 @@
         <p>Created by Alysa for Guided Learning 𖦹 Not affiliated with Ethel Cain</p>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="./js/play-song.js"></script>
 </html>

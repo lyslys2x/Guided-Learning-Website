@@ -20,7 +20,11 @@
     </head>
     <body class="body">
         <nav class="top-nav">
-            <div onclick="navigate('index.html')" class="nav-brand">Strangers</div>
+            <div onclick="navigate('homepage.html')" class="nav-brand">Strangers</div>
+            <button id="playMusic" class="music-button"></button>
+            <audio id="bgMusic" loop>
+                <source src="https://github.com/lyslys2x/Guided-Learning-Website/releases/download/song-ec/Strangers.mp3"  type="audio/mpeg">
+            </audio>
             <div class="nav-links">
                 <a class="active" href="#introduction">Introduction</a>
                 <a href="#lyricism">Lyricism</a>
@@ -83,4 +87,5 @@
         <p>Created by Alysa for Guided Learning 𖦹 Not affiliated with Ethel Cain</p>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="./js/play-song.js"></script>
 </html>
